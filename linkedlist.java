@@ -120,7 +120,7 @@ public class Main
         LinkedList list=new LinkedList();
         Scanner van=new Scanner(System.in);
           int choice;
-        System.out.println("Enter Choice: ");
+        System.out.println("Enter Choice: 1.Add Elements 2.Add at start 3.Add at position 4.Display the List 5.Delete 6.Exit ");
        
         
         
@@ -141,13 +141,14 @@ public class Main
                 case 4:
                     list.show();
                       break;
-                case 5:
+                 case 5:
+                    list.DeleteAt();
+                case 6:
                     
                     break;
-                case 6:
-                    list.DeleteAt();
+
              }
-             } while(choice!=5);
+             } while(choice!=6);
          
       
        
